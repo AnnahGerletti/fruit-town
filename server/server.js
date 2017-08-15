@@ -6,6 +6,7 @@ var cors = require('cors')
 var greetings = require('./routes/greeting')
 var veggies = require('./routes/veggie')
 var fruits = require('./routes/fruit')
+var meats = require('./routes/meat')
 
 var server = express()
 
@@ -17,6 +18,7 @@ server.use(express.static(path.join(__dirname, '../public')))
 server.use('/api/greetings', greetings)
 server.use('/api/veggies', veggies)
 server.use('/api/fruits', fruits)
+server.use('/api/meats', meats)
 
 module.exports = function(db) {
   server.set('db', db)
