@@ -6,7 +6,7 @@ var cors = require('cors')
 var greetings = require('./routes/greeting')
 var veggies = require('./routes/veggie')
 var fruits = require('./routes/fruit')
-var meats = require('./routes/meats')
+var meats = require('./routes/meat')
 
 var server = express()
 

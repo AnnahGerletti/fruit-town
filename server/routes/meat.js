@@ -5,10 +5,10 @@ var meatDb = require('../db/meat')
 
 router.get('/', (req,res) =>{
   let db = req.app.get('db')
-  meatDb.getmeat(db)
-    .then(meats) =>{
+  meatDb.getMeat(db)
+    .then((meats) =>{
       res.json(meats)
-    }
+    })
 })
 
 module.exports = router

@@ -3,4 +3,6 @@ const getMeat = (db) => {
   .select('*')
 }
 
-module.exports = getMeat
+module.exports = {
+  getMeat
+}
