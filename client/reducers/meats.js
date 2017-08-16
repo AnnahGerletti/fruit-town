@@ -1,5 +1,4 @@
-export default function meat(state = [], action){
-  console.log('hello');
+export default function meats(state = [], action){
     switch (action.type) {
       case 'RECEIVE_MEATS':
         return [...action.meats]
