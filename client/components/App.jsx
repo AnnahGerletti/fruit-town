@@ -10,6 +10,8 @@ const App = () => (
       <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/fruit'>Fruit</Link></li>
+        <li><Link to='/veggie'>Vegetables</Link></li>
+        <li><Link to='/meat'>Meat</Link></li>
       </ul>
       <Route exact path="/" component={Greetings} />
         <Route exact path="/fruit" component={Fruit} />
