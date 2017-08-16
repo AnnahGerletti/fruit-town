@@ -4,6 +4,7 @@ import Greetings from './Greetings'
 import Fruit from './Fruits'
 import Veggie from './Veggies'
 import Meat from './Meats'
+
 const App = () => (
   <Router>
     <div className='app-container'>

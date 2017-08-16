@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {GetMeat} from '../actions/meat'
+import {getMeat} from '../actions/meat'
 
 class Meat extends React.Component {
   componentDidMount() {
@@ -12,7 +12,7 @@ class Meat extends React.Component {
         <h2>*Meat*</h2>
         <ul>
           {this.props.meat.map((meat, i) =>
-            <li key={i}>{meat.name}</li>)}
+            <h3><li key={i}>{meat.name}</li></h3>)}
         </ul>
       </div>
     )

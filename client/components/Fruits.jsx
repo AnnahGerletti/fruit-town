@@ -12,7 +12,7 @@ class Fruit extends React.Component {
         <h2>Fruit!!</h2>
         <ul>
           {this.props.fruit.map((fruit, i) =>
-            <li key={i}>{fruit.name}</li>)}
+            <h3><li key={i}>{fruit.name}-{fruit.color}</li></h3>)}
         </ul>
       </div>
     )
