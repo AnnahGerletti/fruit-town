@@ -11,14 +11,15 @@ class Fruit extends React.Component {
       <div className='fruit'>
         <h2>Fruit!!</h2>
         <ul>
-          {this.props.fruit.map((fruit, i) => <li key={i}>{fruit.name}</li>)}
+          {this.props.fruit.map((fruit, i) =>
+            <li key={i}>{fruit.name}</li>)}
         </ul>
       </div>
     )
   }
 }
 function mapStateToProps(state) {
-  return {fruit: state.fruit}
+  return {fruit: state.fruits}
 }
 
 export default connect(mapStateToProps)(Fruit)

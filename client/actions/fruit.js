@@ -15,9 +15,9 @@ export function getFruit() {
   }
 }
 
-function receiveFruit(fruit) {
+function receiveFruit(fruits) {
   return {
-    type: 'RECEIVE_FRUIT',
-    fruit
+    type: 'RECEIVE_FRUITS',
+    fruits
   }
 }

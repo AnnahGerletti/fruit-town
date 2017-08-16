@@ -6,8 +6,8 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('greetings').insert([
         {id: 1, text: 'Hello There'},
-        {id: 2, text: 'Greetings Friend'},
-        {id: 3, text: 'Well Met'}
+        {id: 2, text: 'Welcome Friends'},
+        {id: 3, text: 'Check out our Sales!!'}
       ]);
     });
 };
