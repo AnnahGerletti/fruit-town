@@ -3,6 +3,7 @@ import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Greetings from './Greetings'
 import Fruit from './Fruits'
 import Veggie from './Veggies'
+import Meat from './Meats'
 
 const App = () => (
   <Router>
@@ -17,6 +18,7 @@ const App = () => (
         <Route exact path="/" component={Greetings} />
         <Route exact path="/fruit" component={Fruit} />
         <Route exact path="/veggie" component={Veggie} />
+        <Route exact path="/meat" component={Meat} />
     </div>
   </Router>
 )
