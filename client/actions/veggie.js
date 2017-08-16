@@ -15,9 +15,9 @@ export function getVeggie(){
   }
 }
 
-function recieveVeggie(veggie){
+function receiveVeggie(veggies){
   return{
-    type: 'RECEIVE_VEGGIE',
-    meat
+    type: 'RECEIVE_VEGGIES',
+    veggies
   }
 }

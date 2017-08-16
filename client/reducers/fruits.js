@@ -1,7 +1,7 @@
-export default function(state=[], action) {
+export default function fruit(state=[], action) {
   switch(action.type) {
-    case 'RECEIVE_FRUIT':
-      return [...action.fruit]
+    case 'RECEIVE_FRUITS':
+      return [...action.fruits]
     default:
       return state
   }
