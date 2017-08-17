@@ -3,7 +3,7 @@ exports.up = function(knex, Promise) {
   return knex.schema.createTableIfNotExists('meats', (table) => {
     table.increments('id')
     table.string('name')
-    table.number('supplier_id')
+    table.integer('supplier_id')
   })
 };
 

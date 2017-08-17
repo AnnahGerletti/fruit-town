@@ -1,15 +1,20 @@
 
 const getFruits = (db) => {
   return db('fruits')
-    .select('*')
+    // .select('*')
+    .select('fruits.*', 'suppliers.name as supplier_name')
+    .join('suppliers', 'fruits.supplier_id', 'suppliers.id')//one to many
 }
 
-function getSupplierFruits(db, supplier) => {
+function getSupplierFruits(db) {
   return db('fruits')
-    .select('fruits.*', 'name as supplier_name')
-    .join('supplier', 'fruits.supplier_id', 'supplier.id')
+    .select('fruits.*', 'suppliers.name as supplier_name')
+    .join('suppliers', 'fruits.supplier_id', 'suppliers.id')//one to many
 }
 
 module.exports = {
-  getFruits
+  getFruits,
+  getSupplierFruits
 }
+
+//adding the .join to the getFruits will get supplier names to render on the page.
