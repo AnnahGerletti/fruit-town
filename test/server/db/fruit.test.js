@@ -5,9 +5,10 @@ var dbFruits = require('../../../server/db/fruit')
 
 setupDb(test)
 
-test.cb ('fruit and suppliers', t => {
+test.cb.only('fruit and suppliers', t => {
   dbFruits.getSupplierFruits(t.context.db)
     .then((data)=>{
+      console.log(data);
       t.is(data.length, 3)
       t.is(data[0].supplier_name, 'Dan')
       t.end()
@@ -16,3 +17,5 @@ test.cb ('fruit and suppliers', t => {
       console.log(err);
     })
 })
+
+//db examples FullStackExercise on Kea 2017
