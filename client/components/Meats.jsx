@@ -12,7 +12,7 @@ class Meat extends React.Component {
         <h2>*Meat*</h2>
         <ul>
           {this.props.meat.map((meat, i) =>
-            <h3><li key={i}>{meat.name}</li></h3>)}
+            <h3><li key={i}>{meat.name} -- Supplied By:  {meat.supplier_name}</li></h3>)}
         </ul>
       </div>
     )
