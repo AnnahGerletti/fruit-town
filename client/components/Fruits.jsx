@@ -18,7 +18,7 @@ class Fruit extends React.Component {
           this.openForm(e)}>Add Item</button>
         <ul>
           {this.props.fruit.map((fruit, i) =>
-            <h3><li key={i}>{fruit.color}-{fruit.name}--Supplied By:{fruit.supplier_name}</li></h3>)}
+            <h3><li key={i}>{fruit.color}-{fruit.name} --  Supplied By:{fruit.supplier_name}</li></h3>)}
         </ul>
       </div>
     )
