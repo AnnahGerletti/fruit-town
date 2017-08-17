@@ -10,3 +10,6 @@ export default function fruit(state=[], action) {
       return state
   }
 }
+//a longer way to return the new state.
+// case 'ADD_FRUIT':
+//   return [...state, {name: action.name, color: action.color}]
