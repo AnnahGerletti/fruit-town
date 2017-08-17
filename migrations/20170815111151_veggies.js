@@ -3,6 +3,7 @@ exports.up = function(knex, Promise) {
     table.increments('id')
     table.string('name')
     table.integer('rating')
+    table.integer('supplier_id')
   })
 };
 
