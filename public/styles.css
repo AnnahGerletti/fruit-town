@@ -1,5 +1,19 @@
+*{
+  font-family: 'Rubik', sans-serif;
+}
 body{
-  background-color: "blue";
+  width: 1000px;
+}
+
+.title,.links,.components{
+  padding-left: 5em;
+}
+
+.title{
+  border-style: solid;
+  padding: 1em 0 1em 5em;
+  background-color: yellow;
+  margin-left: 1em;
 }
 
 button {
