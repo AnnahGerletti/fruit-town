@@ -1,17 +1,17 @@
 var test = require('ava')
 var nock = require('nock') //creates a fake api
 
-import {getRandomDrink} from '../../../client/actions/randomDrink'
+import {getSearchDrink} from '../../../client/actions/searchDrink'
 
-test.cb('random drink', t => {
+test.cb('search drink', t => {
   nock("http://www.thecocktaildb.com")
     .get("/api/json/v1/1/random.php")
-    .reply(200, {drink: 'Martini'})
+    .reply(200, {drink: 'Gin'})
 
-    getRandomDrink()((actual)=>{
+    getSearchDrink()((actual)=>{
       console.log(actual);
       t.is(actual.type, 'RECEIVE_DRINK')
-      t.deepEqual(actual.drink, {drink: 'Martini'})
+      t.deepEqual(actual.drink, {drink: 'Gin'})
       t.end()
     })
 })

@@ -1,11 +1,14 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {getFruit} from '../actions/fruit'
+import {getSearchDrink} from '../actions/searchDrink'
 
 class Fruit extends React.Component {
   componentDidMount() {
     this.props.dispatch(getFruit())
+    this .props.dispatch(getSearchDrink('vodka'))
   }
+
 
   openForm(e){
 
