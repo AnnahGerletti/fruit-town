@@ -12,7 +12,7 @@ class Veggie extends React.Component {
         <h2>Vegetables..</h2>
         <ul>
           {this.props.veggie.map((veggie, i) =>
-              <h3><li key={i}>{veggie.name} - {veggie.rating} / 10 --  Supplied By: {veggie.supplier_name} </li></h3>
+              <h3 key={i}><li>{veggie.name} - {veggie.rating} / 10 --  Supplied By: {veggie.supplier_name} </li></h3>
           )}
         </ul>
       </div>

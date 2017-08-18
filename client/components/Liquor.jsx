@@ -16,15 +16,17 @@ class Liquor extends React.Component {
 
   render() {
     const {drink} = this.props
+    console.log(this.props);
     return (
       <div className='liquor'>
         <h2>-Liquor-</h2>
         <button id='button' onClick={(e) =>
           this.newDrink(e)}>New Cocktail</button>
-      <ul>
+        <ul>
           <li>Name: {drink.strDrink}</li>
+          <li>Alcoholic or Not: {drink.strAlcoholic}</li>
         </ul>
-        <img src={drink.strDrinkThumb} />
+        <img className='imageDrink' src={drink.strDrinkThumb} />
 
       </div>
     )
