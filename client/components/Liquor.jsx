@@ -6,7 +6,6 @@ import {getSearchDrink} from '../actions/searchDrink'
 
 class Liquor extends React.Component {
   componentDidMount() {
-    console.log('hi 1')
     this.props.dispatch(getRandomDrink())
     this .props.dispatch(getSearchDrink('vodka'))
   }
@@ -32,7 +31,6 @@ class Liquor extends React.Component {
   }
 }
 function mapStateToProps(state) {
-  console.log(state);
   return {drink: state.randomDrink}
 }
 

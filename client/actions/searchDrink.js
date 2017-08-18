@@ -10,8 +10,7 @@ export function getSearchDrink(search='Gin'){
         console.log('error', err)
       }
       else{
-        dispatch(receiveDrinks(res.body))
-        console.log(res.body.drinks.slice(0,10))
+        dispatch(receiveDrinks(res.body.drinks.slice(0,10)))
       }
     })
   }

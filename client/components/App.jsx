@@ -1,7 +1,7 @@
 import React from 'react'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Greetings from './Greetings'
-import Fruit from './Fruits'
+import Fruit from '../containers/Fruits'
 import Veggie from './Veggies'
 import Meat from './Meats'
 import Liquor from './Liquor'
