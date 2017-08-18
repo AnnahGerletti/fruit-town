@@ -9,7 +9,7 @@ export function getRandomDrink(){
         console.log('error', err)
       }
       else{
-        dispatch(receiveDrink(res.body))
+        dispatch(receiveDrink(res.body.drinks[0]))
       }
     })
   }
