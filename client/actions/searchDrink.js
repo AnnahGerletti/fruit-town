@@ -10,18 +10,18 @@ export function getSearchDrink(search='Gin'){
         console.log('error', err)
       }
       else{
-        dispatch(receiveDrink(res.body))
+        dispatch(receiveDrinks(res.body))
         console.log(res.body.drinks.slice(0,10))
       }
     })
   }
 }
 
-function receiveDrink(drinks){
+function receiveDrinks(drinks){
   return{
     type: 'RECEIVE_DRINKS',
     drinks
   }
 }
 
-//when adding the form need to dispatch the action with a different search term, on click submit form submit the search term 
+//when adding the form need to dispatch the action with a different search term, on click submit form submit the search term

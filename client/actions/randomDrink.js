@@ -1,6 +1,7 @@
 import request from 'superagent'
 
 export function getRandomDrink(){
+  console.log("hello");
   return(dispatch) => {
     request
     .get('http://www.thecocktaildb.com/api/json/v1/1/random.php')
@@ -9,7 +10,7 @@ export function getRandomDrink(){
         console.log('error', err)
       }
       else{
-        dispatch(receiveDrink(res.body))
+        dispatch(receiveDrink(res.body.drinks[0]))
       }
     })
   }
