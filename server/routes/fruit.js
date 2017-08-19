@@ -11,6 +11,17 @@ router.get('/', (req, res) =>{
     })
 })
 
+router.post('/', (req, res) =>{
+  let db = req.app.get('db')
+  fruitDb.insertFruit(req.body, db)
+  .then(fruit =>{
+    res.json(fruit)
+  })
+  .catch((err) =>{
+    res.status(500).send(err.message)
+  })
+})
+
 // router.post(/)
 
 module.exports = router

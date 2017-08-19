@@ -3,7 +3,7 @@ import request from 'superagent'
 export function getRandomDrink(){
   return(dispatch) => {
     request
-    .get('http://www.thecocktaildb.com/api/json/v1/1/random.php')
+    .get('/api/external')
     .end((err, res)=>{
       if (err){
         console.log('error', err)

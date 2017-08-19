@@ -1,4 +1,5 @@
 import React from 'react'
+import AddFruitForm from './AddFruitForm'
 
 export default class Fruit extends React.Component {
   componentDidMount() {
@@ -12,6 +13,7 @@ export default class Fruit extends React.Component {
     return (
       <div className='fruit'>
         <h2>Fruit!!</h2>
+        <AddFruitForm />
         <button id='button' onClick={(e) =>
           this.openForm(e)}>Add Item</button>
         <ul>
