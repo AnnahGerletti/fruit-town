@@ -21,3 +21,26 @@ function receiveFruit(fruits) {
     fruits
   }
 }
+
+export function appendFruitRequest (fruit, callback){
+  return (dispatch) => {
+    request
+      .post('/api/fruits')
+      .send(fruit)
+      .end((err, res) =>{
+        if (err){
+          callback(err)
+        }
+        else {
+          callback()
+      }
+    })
+  }
+}
+
+function addFruit(fruit) {
+  return{
+    type: 'ADD_FRUIT',
+    fruit
+  }
+}

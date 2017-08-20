@@ -3,4 +3,7 @@
 //just the redux stuff, actions and dispatch comands.
 //Having a container makes testing componets easier
 //it removes the complex parts.
-//things to do when testing Compt, be specific about props, disconnect compt and be specific about how you want it to behave. 
+//things to do when testing Compt, be specific about props, disconnect compt and be specific about how you want it to behave.
+
+
+//add a instock column to the database

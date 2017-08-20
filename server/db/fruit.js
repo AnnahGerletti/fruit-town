@@ -12,7 +12,7 @@ function getSupplierFruits(db) {
     .join('suppliers', 'fruits.supplier_id', 'suppliers.id')//one to many
 }
 
-function insertFruit(fruit, db) {
+function addFruit(fruit, db) {
 return db('fruits')
 .insert(fruit)
 }
@@ -21,7 +21,7 @@ return db('fruits')
 module.exports = {
   getFruits,
   getSupplierFruits,
-  insertFruit
+  addFruit
 }
 
 //adding the .join to the getFruits will get supplier names to render on the page.

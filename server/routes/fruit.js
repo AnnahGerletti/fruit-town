@@ -13,7 +13,7 @@ router.get('/', (req, res) =>{
 
 router.post('/', (req, res) =>{
   let db = req.app.get('db')
-  fruitDb.insertFruit(req.body, db)
+  fruitDb.addFruit(req.body, db)
   .then(fruit =>{
     res.json(fruit)
   })
@@ -21,7 +21,6 @@ router.post('/', (req, res) =>{
     res.status(500).send(err.message)
   })
 })
-
-// router.post(/)
+//add fruit to db when it is submited on the app
 
 module.exports = router
