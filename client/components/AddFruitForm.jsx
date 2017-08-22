@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-class AddFruitForm extends React.component {
+class AddFruitForm extends React.Component {
   constructor(props){
     super(props)
     this.state ={
@@ -21,6 +21,9 @@ render(){
     </div>
   )
 }
-}
 
+}
+function mapStateToProps(state){
+
+}
 export default connect (mapStateToProps)(AddFruitForm)

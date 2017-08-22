@@ -16,6 +16,7 @@ router.post('/', (req, res) =>{
   fruitDb.addFruit(req.body, db)
   .then(fruit =>{
     res.json(fruit)
+    console.log(req.body);
   })
   .catch((err) =>{
     res.status(500).send(err.message)
