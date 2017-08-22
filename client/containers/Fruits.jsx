@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 import {getFruit} from '../actions/fruit'
+import {getSuppliers} from '../actions/suppliers'
 // import {getSearchDrink} from '../actions/searchDrink'
 
 import Fruit from '../components/Fruits.jsx'
@@ -14,6 +15,7 @@ function mapDispatchToProps(dispatch) {
   return {
     onLoad: () => {
       dispatch(getFruit())
+      dispatch(getSuppliers())
     }
   }
 }

@@ -5,11 +5,13 @@ import fruits from './fruits'
 import veggies from './veggies'
 import meats from './meats'
 import getRandomDrinks from './randomDrinks'
+import suppliers from './suppliers'
 
 export default combineReducers({
   greetings,
   fruits,
   veggies,
   meats,
-  randomDrink: getRandomDrinks
+  randomDrink: getRandomDrinks,
+  suppliers
 })

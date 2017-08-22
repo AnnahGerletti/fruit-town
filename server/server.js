@@ -7,6 +7,7 @@ var greetings = require('./routes/greeting')
 var veggies = require('./routes/veggie')
 var fruits = require('./routes/fruit')
 var meats = require('./routes/meat')
+var suppliers = require('./routes/supplier')
 
 var server = express()
 
@@ -19,6 +20,7 @@ server.use('/api/greetings', greetings)
 server.use('/api/veggies', veggies)
 server.use('/api/fruits', fruits)
 server.use('/api/meats', meats)
+server.use('/api/suppliers', suppliers)
 
 var request = require('superagent')
 server.get('/api/external', (req, res) => {
@@ -35,7 +37,7 @@ server.get('/api/external', (req, res) => {
     }
   })
 })
-//the external api for drinks. 
+//the external api for drinks.
 
 module.exports = function(db) {
   server.set('db', db)
